@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi Con S", "Multi Con S\Multi Con S.csproj", "{5EDE9EBC-0688-4F88-A45A-5B0E577BBC5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EDE9EBC-0688-4F88-A45A-5B0E577BBC5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDE9EBC-0688-4F88-A45A-5B0E577BBC5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDE9EBC-0688-4F88-A45A-5B0E577BBC5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDE9EBC-0688-4F88-A45A-5B0E577BBC5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1E821C8-6474-4E33-B0D6-B7FEC6949122}
+	EndGlobalSection
+EndGlobal
