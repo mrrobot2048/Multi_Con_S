@@ -11,6 +11,8 @@ namespace Multi_Con_S
     class Listener
     {
         Socket s;
+        public delegate void SocketAcceptedHandler(Socket e);
+        public event SocketAcceptedHandler SocketAccepted;
 
         public bool Listening
         {
@@ -22,13 +24,11 @@ namespace Multi_Con_S
             get;
             private set;
         }
-
         public Listener(int port)
         {
             Port = port;
             s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         }
-
         public void Start()
         {
             if (Listening)
@@ -39,7 +39,6 @@ namespace Multi_Con_S
             s.BeginAccept(callback, null);
             Listening = true;
         }
-
         public void Stop()
         {
             if (!Listening)
@@ -63,9 +62,6 @@ namespace Multi_Con_S
             {
                 Console.WriteLine(ex.Message);
             }
-        }
-
-        public delegate void SocketAcceptedHandler(Socket e);
-        public event SocketAcceptedHandler SocketAccepted;
+        }       
     }
 }
