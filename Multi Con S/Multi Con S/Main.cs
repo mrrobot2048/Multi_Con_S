@@ -44,7 +44,6 @@ namespace Multi_Con_S
 
             });
         }
-
         private void Client_Disconnected(Client sender)
         {
             Invoke((MethodInvoker)delegate

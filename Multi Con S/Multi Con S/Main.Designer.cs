@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 296);
+            this.ClientSize = new System.Drawing.Size(649, 296);
             this.Controls.Add(this.lstClients);
             this.Name = "Main";
             this.Text = "Main";

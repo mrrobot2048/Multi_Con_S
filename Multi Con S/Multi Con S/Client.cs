@@ -55,7 +55,6 @@ namespace Multi_Con_S
                 }
 
             }
-
         }
         public void Close()
         {
