@@ -20,7 +20,6 @@ namespace Multi_Con_S
             listener.SocketAccepted += Listener_SocketAccepted;
             Load += Main_Load;
         }
-
         private void Main_Load(object sender, EventArgs e)
         {
             listener.Start();
