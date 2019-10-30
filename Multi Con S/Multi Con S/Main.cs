@@ -40,7 +40,7 @@ namespace Multi_Con_S
                 i.SubItems.Add("xx");
                 i.SubItems.Add("xx");
                 i.Tag = client;
-                lstClients.Items.Add(i);
+                lstClients.Items.Add(i);//aquí se adjunta un cliente nuevo..
 
             });
         }
@@ -54,7 +54,7 @@ namespace Multi_Con_S
                     Client client = lstClients.Items[i].Tag as Client;
                     if (client.ID == sender.ID)
                     {
-                        lstClients.Items.RemoveAt(i);
+                        lstClients.Items.RemoveAt(i);// aquí se borra si se desconecta...
                         break;
                     }
                 }
