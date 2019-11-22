@@ -51,8 +51,9 @@ namespace Multi_Con_S
                 {
                     Client client = lstClients.Items[i].Tag as Client;
                     if (client.ID == sender.ID)
-                        lstClients.Items.RemoveAt(i);
+                        
                     {
+                        lstClients.Items.RemoveAt(i);
                         break;
                     }
                 }
