@@ -35,7 +35,7 @@ namespace Multi_Con_S
             {
                 ListViewItem i = new ListViewItem();
                 i.Text = client.EndPoint.ToString();
-                i.SubItems.Add(client.ID);
+                i.SubItems.Add("xx");
                 i.SubItems.Add("xx");
                 i.SubItems.Add("xx");
                 i.Tag = client;
@@ -69,8 +69,19 @@ namespace Multi_Con_S
                     Client client = lstClients.Items[i].Tag as Client;
                     if (client.ID == sender.ID)
                     {
-                        lstClients.Items[i].SubItems[2].Text = Encoding.Default.GetString(data);
-                        lstClients.Items[i].SubItems[3].Text = DateTime.Now.ToString();
+
+                        String decoded = Encoding.Default.GetString(data);
+
+                        string[] lines = decoded.Split('\n');
+                        string MName = lines[0];
+                        string UName = lines[1];
+                        string OS = lines[2];
+                        string AV = lines[3];
+
+                        lstClients.Items[i].SubItems[2].Text = MName;
+                        lstClients.Items[i].SubItems[2].Text = UName;
+                        lstClients.Items[i].SubItems[3].Text = OS;
+
                         break;
                     }
                 }
