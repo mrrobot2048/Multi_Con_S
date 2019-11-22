@@ -34,7 +34,7 @@ namespace Multi_Con_S
             Invoke((MethodInvoker)delegate
             {
                 ListViewItem i = new ListViewItem();
-                i.Text = client.EndPoint.ToString();
+                i.SubItems.Add("xx");
                 i.SubItems.Add("xx");
                 i.SubItems.Add("xx");
                 i.SubItems.Add("xx");
@@ -51,8 +51,8 @@ namespace Multi_Con_S
                 {
                     Client client = lstClients.Items[i].Tag as Client;
                     if (client.ID == sender.ID)
-                    {
                         lstClients.Items.RemoveAt(i);
+                    {
                         break;
                     }
                 }
@@ -78,9 +78,10 @@ namespace Multi_Con_S
                         string OS = lines[2];
                         string AV = lines[3];
 
-                        lstClients.Items[i].SubItems[2].Text = MName;
-                        lstClients.Items[i].SubItems[2].Text = UName;
-                        lstClients.Items[i].SubItems[3].Text = OS;
+                        lstClients.Items[i].SubItems[0].Text = MName;
+                        lstClients.Items[i].SubItems[1].Text = UName;
+                        lstClients.Items[i].SubItems[2].Text = OS;
+                        lstClients.Items[i].SubItems[3].Text = AV;
 
                         break;
                     }

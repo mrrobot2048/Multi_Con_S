@@ -52,22 +52,22 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "EndPoint";
+            this.columnHeader1.Text = "PC/NAME";
             this.columnHeader1.Width = 150;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "ID";
+            this.columnHeader2.Text = "PC/USUARIO";
             this.columnHeader2.Width = 120;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Last Msg";
+            this.columnHeader3.Text = "OS";
             this.columnHeader3.Width = 200;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Last Rec Time";
+            this.columnHeader4.Text = "AV";
             this.columnHeader4.Width = 120;
             // 
             // Main
